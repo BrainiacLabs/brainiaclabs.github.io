@@ -1,11 +1,12 @@
-.contacts .col-lg-4 {
-    text-align: center;
+.contacts .card-section {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     -webkit-transition: .25s box-shadow;
     transition: .25s box-shadow;
 }
-
-.contacts .col-lg-4:focus,
-.contacts .col-lg-4:hover {
+.contacts .card-section:focus,
+.contacts .card-section:hover {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.navbar {
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 }
