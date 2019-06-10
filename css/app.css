@@ -29,12 +29,13 @@
     text-align: center;
     overflow: hidden;
     position: relative;
+    border-radius: 50px;
 }
 
 .our-team .pic {
     display: inline-block;
-    width: 130px;
-    height: 130px;
+    width: 50%;
+    height: auto;
     margin-bottom: 50px;
     position: relative;
     z-index: 1;
@@ -87,7 +88,7 @@
 
 .our-team .title {
     font-size: 22px;
-    font-weight: 700px;
+    font-weight: 700;
     color: #4e5052;
     letter-spacing: 1px;
     text-transform: capitalize;
