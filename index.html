@@ -27,6 +27,7 @@
                 let clip = (scrollTop > 100) ? 100 : scrollTop;
                 console.log(`clip: ${clip}`);
                 document.getElementById("j-header").style.clipPath = `polygon(0 0, 100% 0, 100% ${clip}%, 0 100%)`;
+                document.getElementById("j-header").style.webkitClipPath = `polygon(0 0, 100% 0, 100% ${clip}%, 0 100%)`;
             };
         })();
     </script>
