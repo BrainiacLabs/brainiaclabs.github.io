@@ -1,6 +1,95 @@
-/***--------------------- Global Cosmetics ------------------***/
-.navbar {
+/* Color Theme Swatches in Hex */
+/* :root {
+    --main-color: #03318C;
+    --secondary-color: #1b65a6;
+    --bg-primary-color: #99B4BF;
+    --ternary-color: #A62103;
+    --shadow-color: #8C3B3B;
+} */
+
+:root {
+    --main-color: #F2F2F2;
+    --secondary-color: #D9D9D9;
+    --bg-primary-color: #737373;
+    --ternary-color: #404040;
+    --shadow-color: #0D0D0D;
+}
+
+body::after {
+    content: '';
+    background: #F0F2F0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, var(--shadow-color), #F0F2F0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, var(--shadow-color), #F0F2F0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.j-header-wrap {
+    filter: drop-shadow(-1px 3px 3px var(--shadow-color));
+}
+
+.jumbo-header {
+    background: url("https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?cs=srgb&dl=code-coding-data-574070.jpg&fm=jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+}
+
+.jumbo-header.home {
+    height: 85vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+.jumbo-header::after {
+    content: '';
+    background: var(--shadow-color);
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+li.nav-item.active {
+    border-bottom: 2px solid white;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+/***--------------------- Global Cosmetics ------------------***/
+.navbar.nav-scroll::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: Black;
+    opacity: 0.9;
+    z-index: -1;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    transition: all 0.5s ease 0s;
+}
+
+.jumbo-carousel {
+    height: 70vh !important;
+    background: linear-gradient(-180deg, var(--main-color), var(--bg-primary-color), white);
 }
 
 
@@ -48,7 +137,8 @@
 .our-team .pic:before {
     content: '';
     width: 100%;
-    background: #007bff;
+    background: var(--shadow-color);
+    opacity: 0.8;
     position: absolute;
     bottom: 135%;
     right: 0;
@@ -66,7 +156,8 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #007bff;
+    background: var(--shadow-color);
+    opacity: 0.8;
     position: absolute;
     top: 0;
     left: 0;
@@ -110,7 +201,8 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    background: #007bff;
+    background: var(--shadow-color);
+    opacity: 0.8;
     position: absolute;
     bottom: -100px;
     left: 0;
@@ -134,7 +226,7 @@
 }
 
 .our-team .social li a:hover {
-    color: #007bff;
+    color: var(--shadow-color);
     background: #f7f5ec;
     text-decoration: none;
 }

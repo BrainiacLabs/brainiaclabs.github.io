@@ -13,10 +13,21 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://brainiaclabs.github.io/css/app.css" type="text/css" />
     <script src="https://kit.fontawesome.com/f277f03814.js"></script>
+    <script>
+        (function () {
+            window.onscroll = () => {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    document.getElementById("navbar").classList.add('nav-scroll');
+                } else {
+                    document.getElementById("navbar").classList.remove('nav-scroll');
+                }
+            };
+        })();
+    </script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
         <a class="navbar-brand" href="https://brainiaclabs.github.io/">
             <img src="https://brainiaclabs.github.io/images/brainiac-01.ico" width="40px" height="auto"
                 alt="BrainiacLabs" />
@@ -46,6 +57,10 @@
             </ul>
         </div>
     </nav>
+    <div class="j-header-wrap">
+        <div id="j-header" class="jumbo-header">
+        </div>
+    </div>
     <div role="main">
         <div class="container container-fluid mx-auto my-5">
             <div class="card-deck applications">
