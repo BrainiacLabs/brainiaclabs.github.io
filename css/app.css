@@ -1,5 +1,6 @@
 /* Color Theme Swatches in Hex */
 :root {
+    --primary-color: #f4cf03;
     --main-color: #F2F2F2;
     --secondary-color: #D9D9D9;
     --bg-primary-color: #737373;
@@ -16,6 +17,25 @@ body::after {
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background: var(--primary-color);
+    color: var(--main-color);
+}
+
+.dropdown-item {
+    color: rgba(255, 255, 255, .5);
+}
+
+.dropdown-menu {
+    background: transparent;
+    border: none;
+}
+
+.dropdown-menu.show {
+    background: #121212;
 }
 
 .j-header-wrap {
@@ -61,7 +81,7 @@ body::after {
 }
 
 li.nav-item.active {
-    border-bottom: 2px solid #f4cf03;
+    border-bottom: 2px solid var(--primary-color);
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
 }
@@ -135,7 +155,7 @@ li.nav-item.active {
 .our-team .pic:before {
     content: '';
     width: 100%;
-    background: #f4cf03;
+    background: var(--primary-color);
     opacity: 1;
     position: absolute;
     bottom: 135%;
@@ -226,7 +246,7 @@ li.nav-item.active {
 
 .our-team .social li a:hover {
     color: var(--shadow-color);
-    background: #f4cf03;
+    background: var(--primary-color);
     text-decoration: none;
 }
 
@@ -240,9 +260,11 @@ li.nav-item.active {
     color: white;
     z-index: 0;
 }
-.jumbotron.aboutus .container{
+
+.jumbotron.aboutus .container {
     z-index: 1;
 }
+
 .jumbotron.aboutus::after {
     content: '';
     height: 100%;
