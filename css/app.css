@@ -54,7 +54,15 @@ body::after {
     background: Black;
     opacity: 0.9;
     z-index: -1;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    -ms-box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    -o-box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
     box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
 }
 
@@ -111,6 +119,9 @@ body::after {
 li.nav-item.active {
     border-bottom: 2px solid var(--primary-color);
     -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
 }
 
@@ -122,13 +133,24 @@ li.nav-item.active {
 }
 
 .applications .card {
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0.09);
+    -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0.09);
+    -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0.09);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0.09);
     -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    -moz-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    -ms-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    -o-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 .applications .card:focus,
 .applications .card:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0), 0 10px 10px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0), 0 10px 10px rgba(0, 0, 0, 0.09);
+    -ms-box-shadow: 0 14px 28px rgba(0, 0, 0, 0), 0 10px 10px rgba(0, 0, 0, 0.09);
+    -o-box-shadow: 0 14px 28px rgba(0, 0, 0, 0), 0 10px 10px rgba(0, 0, 0, 0.09);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0), 0 10px 10px rgba(0, 0, 0, 0.09);
 }
 
@@ -146,12 +168,23 @@ li.nav-item.active {
     overflow: hidden;
     position: relative;
     border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    -moz-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    -ms-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    -o-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 .our-team:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -ms-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -o-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
@@ -174,7 +207,15 @@ li.nav-item.active {
     right: 0;
     left: 0;
     z-index: -1;
+    -webkit-transform: scale(3);
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -o-transform: scale(3);
     transform: scale(3);
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
     transition: all 0.3s linear 0s;
 }
 
@@ -199,12 +240,28 @@ li.nav-item.active {
     width: 100%;
     height: auto;
     border-radius: 50%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
     transform: scale(1);
+    -webkit-transition: all 0.9s ease 0s;
+    -moz-transition: all 0.9s ease 0s;
+    -ms-transition: all 0.9s ease 0s;
+    -o-transition: all 0.9s ease 0s;
     transition: all 0.9s ease 0s;
 }
 
 .our-team:hover .pic img {
+    -webkit-box-shadow: 0 0 0 7px #f7f5ec;
+    -moz-box-shadow: 0 0 0 7px #f7f5ec;
+    -ms-box-shadow: 0 0 0 7px #f7f5ec;
+    -o-box-shadow: 0 0 0 7px #f7f5ec;
     box-shadow: 0 0 0 7px #f7f5ec;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
     transform: scale(0.8);
 }
 
@@ -237,6 +294,10 @@ li.nav-item.active {
     position: absolute;
     bottom: -100px;
     left: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
 }
 
@@ -253,6 +314,10 @@ li.nav-item.active {
     padding: 10px;
     font-size: 17px;
     color: white;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 
@@ -357,7 +422,9 @@ li.nav-item.active {
 .post:hover .post__content {
     -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, .1);
     -moz-box-shadow: 0 6px 16px rgba(0, 0, 0, .1);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, .1)
+    -ms-box-shadow: 0 6px 16px rgba(0, 0, 0, .1);
+    -o-box-shadow: 0 6px 16px rgba(0, 0, 0, .1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .1);
 }
 
 .post:hover .post__title a {
@@ -445,6 +512,8 @@ li.nav-item.active {
     background: #fff;
     -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, .05);
     -moz-box-shadow: 0 6px 16px rgba(0, 0, 0, .05);
+    -ms-box-shadow: 0 6px 16px rgba(0, 0, 0, .05);
+    -o-box-shadow: 0 6px 16px rgba(0, 0, 0, .05);
     box-shadow: 0 6px 16px rgba(0, 0, 0, .05);
     -webkit-transition: all .4s cubic-bezier(.2, .3, 0, 1);
     -moz-transition: all .4s cubic-bezier(.2, .3, 0, 1);
