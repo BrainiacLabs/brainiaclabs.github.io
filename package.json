@@ -16,7 +16,8 @@
     "url": "https://github.com/BrainiacLabs/brainiaclabs.github.io/issues"
   },
   "homepage": "https://github.com/BrainiacLabs/brainiaclabs.github.io#readme",
-  "dependencies": {
-    "bootstrap": "^4.3.1"
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.17.1"
   }
 }
